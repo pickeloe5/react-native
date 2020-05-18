@@ -6,6 +6,8 @@
  */
 package com.facebook.react.views.textinput;
 
+import android.util.Log;
+import android.widget.TextView;
 import android.content.Context;
 import android.graphics.Rect;
 import android.graphics.Typeface;
@@ -398,8 +400,15 @@ public class ReactEditText extends EditText {
     return ++mNativeEventCount;
   }
 
+  @Override
+  public void setText(CharSequence text, TextView.BufferType type) {
+    Log.d("NICC", "nicc - setText called: '" + text.toString() + "'");
+    super.setText(text, type);
+  }
+
   // VisibleForTesting from {@link TextInputEventsTestCase}.
   public void maybeSetText(ReactTextUpdate reactTextUpdate) {
+    Log.d("NICC", "nicc - maybeSetText called: '" + reactTextUpdate.getText() + "'");
     if (isSecureText() && TextUtils.equals(getText(), reactTextUpdate.getText())) {
       return;
     }
