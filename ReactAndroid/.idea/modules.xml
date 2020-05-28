@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../RNTester/RNTester.iml" filepath="$PROJECT_DIR$/../RNTester/RNTester.iml" group="react-native/RNTester" />
+      <module fileurl="file://$PROJECT_DIR$/ReactAndroid.iml" filepath="$PROJECT_DIR$/ReactAndroid.iml" group="react-native/ReactAndroid" />
+      <module fileurl="file://$PROJECT_DIR$/../RNTester/android/android.iml" filepath="$PROJECT_DIR$/../RNTester/android/android.iml" group="react-native/RNTester/android" />
+      <module fileurl="file://$PROJECT_DIR$/../RNTester/android/app/app.iml" filepath="$PROJECT_DIR$/../RNTester/android/app/app.iml" group="react-native/RNTester/android/app" />
+      <module fileurl="file://$PROJECT_DIR$/../react-native.iml" filepath="$PROJECT_DIR$/../react-native.iml" group="react-native" />
+    </modules>
+  </component>
+</project>

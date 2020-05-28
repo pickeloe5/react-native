@@ -22,6 +22,7 @@ import android.text.TextWatcher;
 import android.text.method.KeyListener;
 import android.text.method.QwertyKeyListener;
 import android.util.TypedValue;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
@@ -465,6 +466,7 @@ public class ReactEditText extends EditText {
 
   // VisibleForTesting from {@link TextInputEventsTestCase}.
   public void maybeSetText(ReactTextUpdate reactTextUpdate) {
+    Log.d("NICC", "nicc - maybeSetText called: " + getText() + " -> " + reactTextUpdate.getText());
     if (isSecureText() && TextUtils.equals(getText(), reactTextUpdate.getText())) {
       return;
     }
